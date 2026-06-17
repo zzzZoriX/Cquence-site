@@ -1,4 +1,9 @@
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
     font-size: 16px;
     margin: 0;
 
@@ -38,11 +43,11 @@ body {
     padding-left: 3rem;
 }
 .logo img {
-    height: 7rem;
-    width: 6rem;
+    height: 5rem;
+    width: 4.2rem;
 }
 .logo h2 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: 'Montserrat', sans-serif;
 
     margin: 0 0 0 0.5rem;
@@ -74,7 +79,6 @@ body {
     letter-spacing: -0.01em;
 }
 .use_buttons button:hover {
-    font-size: 2rem;
     text-shadow: 0 0 0.2rem white;
 }
 
@@ -95,10 +99,97 @@ body {
     border-radius: 70%;
     border: 5px solid white;
 }
-.account h3 {
+.account button {
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
     color: white;
 
+    background: rgba(0, 0, 0, 0);
+    border: none;
+
     margin: 0 1rem  0 0;
+}
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100%;
+    width: 80%;
+    padding: 1rem 1rem 1rem 1rem;
+
+    background: linear-gradient(to top right, #222222, #303030);
+    border-radius: 2rem;
+    box-shadow: 0 0 2rem #222222;
+}
+.info img {
+    width: 7rem;
+    height: 8rem;
+}
+.info h1 {
+    color: white;
+    font-size: 3rem;
+    font-family: "inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+
+    margin-top: -0.6rem;
+
+}
+
+
+.info-switchers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 1rem;
+    background-color: black;
+
+    gap: 2rem;
+    height: 3rem;
+    width: 55%;
+}
+.info-switchers button {
+    background: rgba(0, 0, 0, 0);
+    border-radius: 2rem;
+    border: none;
+
+    color: white;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: -0.01em;
+}
+.info-switchers button:hover {
+    text-shadow: 0 0 0.2rem white;
+    font-size: 1.8rem;
+}
+
+.info-buttons.active {
+    text-shadow: 0 0 0.5rem white;
+}
+.info-buttons {
+    text-shadow: 0 0 0 0;
+}
+
+
+.info-block {
+    display: none;
+
+    padding: 1rem;
+
+    font-size: 1.4rem;
+    color: white;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+
+    word-wrap: break-word;
+}
+.info-block.active {
+    display: block;
 }
