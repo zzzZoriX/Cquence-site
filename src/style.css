@@ -112,7 +112,7 @@ body {
 
 
 .main-block {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
 
@@ -123,6 +123,9 @@ body {
     background: linear-gradient(to top right, #222222, #303030);
     border-radius: 2rem;
     box-shadow: 0 0 2rem #222222;
+}
+.main-block.active {
+    display: flex;
 }
 .main-block img {
     width: 7rem;
