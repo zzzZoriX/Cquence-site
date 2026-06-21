@@ -16,3 +16,10 @@ buttons.forEach(button => {
         }
     })
 })
+
+function onAccountButtonClick(){
+    document.getElementById('account-window').classList.add('active');
+}
+function onExitFromAccountWindow(){
+    document.getElementById('account-window').classList.remove('active');
+}

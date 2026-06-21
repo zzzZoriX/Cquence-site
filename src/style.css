@@ -193,3 +193,65 @@ body {
 .info-block.active {
     display: block;
 }
+
+
+.account-window {
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 50%);
+}
+.account-window.active {
+    display: flex;
+}
+
+
+.account-window-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 2rem;
+
+    background: linear-gradient(to top right, #000000, #232323);
+    border-radius: 2rem;
+    border: 2px solid #787878;
+
+    width: 40%;
+    height: 60%;
+}
+
+
+.exit-account-window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100%;
+    width: 10%
+}
+.exit-account-window button {
+    border-radius: 3rem;
+    background: rgb(120 120 120);
+    border: none;
+
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    font-size: 1rem;
+
+    width: 100%;
+    height: 5%;
+}
+.exit-account-window button:hover {
+    transform: scale(1.05);
+}
