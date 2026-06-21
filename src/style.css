@@ -111,7 +111,7 @@ body {
 }
 
 
-.info {
+.main-block {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -124,11 +124,11 @@ body {
     border-radius: 2rem;
     box-shadow: 0 0 2rem #222222;
 }
-.info img {
+.main-block img {
     width: 7rem;
     height: 8rem;
 }
-.info h1 {
+.main-block h1 {
     color: white;
     font-size: 3rem;
     font-family: "inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;

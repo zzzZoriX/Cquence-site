@@ -1,7 +1,22 @@
-const buttons = document.querySelectorAll('.info-buttons');
-const blocks = document.querySelectorAll('.info-block');
+const info_buttons = document.querySelectorAll('.info-buttons');
+const info_blocks = document.querySelectorAll('.info-block');
 
-buttons.forEach(button => {
+info_buttons.forEach(button => change_active(button, info_blocks, info_buttons));
+
+const main_buttons = document.querySelectorAll('.main-buttons');
+const main_blocks = document.querySelectorAll('.main-block');
+
+main_buttons.forEach(button => change_active(button, main_blocks, main_buttons));
+
+
+function onAccountButtonClick(){
+    document.getElementById('account-window').classList.add('active');
+}
+function onExitFromAccountWindow(){
+    document.getElementById('account-window').classList.remove('active');
+}
+
+function change_active(button, blocks, buttons){
     button.addEventListener('click', () => {
         blocks.forEach(block => block.classList.remove('active'));
 
@@ -15,11 +30,4 @@ buttons.forEach(button => {
             button.classList.add('active');
         }
     })
-})
-
-function onAccountButtonClick(){
-    document.getElementById('account-window').classList.add('active');
-}
-function onExitFromAccountWindow(){
-    document.getElementById('account-window').classList.remove('active');
 }
