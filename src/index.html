@@ -71,68 +71,186 @@
                     <details>
                         <summary>Глава 1: Введение в С</summary>
                         <ul>
-                            <li>Первая программа</li>
-                            <li>Ввод вывод</li>
-                            <li>Переменные и типы данных</li>
-                            <li>Операции</li>
-                            <li>Условия</li>
-                            <li>Циклы</li>
-                            <li>Массивы</li>
-                            <li>Многомерные массивы</li>
+                            <li onclick="changeDocumentationData()" data-target="fp">Первая программа</li>
+                            <li onclick="changeDocumentationData()" data-target="io">Ввод вывод</li>
+                            <li onclick="changeDocumentationData()" data-target="vdt">Переменные и типы данных</li>
+                            <li onclick="changeDocumentationData()" data-target="ops">Операции</li>
+                            <li onclick="changeDocumentationData()" data-target="">Условия</li>
+                            <li onclick="changeDocumentationData()" data-target="">Циклы</li>
+                            <li onclick="changeDocumentationData()" data-target="">Массивы</li>
+                            <li onclick="changeDocumentationData()" data-target="">Многомерные массивы</li>
                         </ul>
                     </details>
                     <details>
                         <summary>Глава 2: Работа с данными</summary>
                         <ul>
-                            <li>Указатели</li>
-                            <li>Константы</li>
-                            <li>Тип auto</li>
-                            <li>Константы и указатели</li>
+                            <li onclick="changeDocumentationData()" data-target="">Указатели</li>
+                            <li onclick="changeDocumentationData()" data-target="">Константы</li>
+                            <li onclick="changeDocumentationData()" data-target="">Тип auto</li>
+                            <li onclick="changeDocumentationData()" data-target="">Константы и указатели</li>
                         </ul>
                     </details>
                     <details>
                         <summary>Глава 3: Функции</summary>
                         <ul>
-                            <li>Функции</li>
-                            <li>Функция, как результат другой функции</li>
-                            <li>Указатель на функцю</li>
+                            <li onclick="changeDocumentationData()" data-target="">Функции</li>
+                            <li onclick="changeDocumentationData()" data-target="">Функция, как результат другой функции</li>
+                            <li onclick="changeDocumentationData()" data-target="">Указатель на функцю</li>
                         </ul>
                     </details>
                     <details>
                         <summary>Глава 4: Структуры, объединения и перечеслиния</summary>
                         <ul>
-                            <li>Структуры</li>
-                            <li>Анонимная структуры</li>
-                            <li>Перечисления</li>
-                            <li>Объединения</li>
-                            <li>Битовые поля</li>
-                            <li>typedef</li>
+                            <li onclick="changeDocumentationData()" data-target="">Структуры</li>
+                            <li onclick="changeDocumentationData()" data-target="">Анонимная структуры</li>
+                            <li onclick="changeDocumentationData()" data-target="">Перечисления</li>
+                            <li onclick="changeDocumentationData()" data-target="">Объединения</li>
+                            <li onclick="changeDocumentationData()" data-target="">Битовые поля</li>
+                            <li onclick="changeDocumentationData()" data-target="">typedef</li>
                         </ul>
                     </details>
                     <details>
                         <summary>Глава 5: Препроцессор</summary>
                         <ul>
-                            <li>define</li>
-                            <li>include</li>
-                            <li>Макрос условия</li>
-                            <li>Свои макросы</li>
+                            <li onclick="changeDocumentationData()" data-target="">define</li>
+                            <li onclick="changeDocumentationData()" data-target="">include</li>
+                            <li onclick="changeDocumentationData()" data-target="">Макрос условия</li>
+                            <li onclick="changeDocumentationData()" data-target="">Свои макросы</li>
                         </ul>
                     </details>
                     <details>
-                        <summary>Глава 8: Стандартная библиотека</summary>
+                        <summary>Глава 7: Стандартная библиотека</summary>
                         <ul>
-                            <li>Математика</li>
-                            <li>Строки</li>
-                            <li>Дата и время</li>
-                            <li></li>
+                            <li onclick="changeDocumentationData()" data-target="">Математика</li>
+                            <li onclick="changeDocumentationData()" data-target="">Строки</li>
+                            <li onclick="changeDocumentationData()" data-target="">Дата и время</li>
                         </ul>
                     </details>
                     <details>
-                        <summary>Глава 7: Динамическая память</summary>
+                        <summary>Глава 8: Динамическая память</summary>
                         <ul>
-                            <li></li>
+                            <li onclick="changeDocumentationData()" data-target="">Выделение и освобождение памяти</li>
+                            <li onclick="changeDocumentationData()" data-target="">Перевыделение памяти</li>
                         </ul>
                     </details>
+                </div>
+            </div>
+            <div>
+                <div id="fp" class="content-block">
+                  <h2>Первая программа на C</h2>
+                  <p>Классическим началом изучения языка является написание программы, которая выводит на экран приветствие. В Си минимальный рабочий код выглядит следующим образом:</p>
+
+                  <div class="code-wrapper">
+                    <div class="code-header"><span class="code-lang">c</span></div>
+                    <pre><code>#include &lt;stdio.h&gt;
+                    
+                int main() {
+                    // Вывод строки на экран
+                    printf("Hello, World!\n"); 
+                    return 0;
+                }</code></pre>
+                  </div>
+              
+                  <h3>Разбор базовых элементов:</h3>
+                  <ul>
+                    <li><code>#include &lt;stdio.h&gt;</code> — директива препроцессора, которая подключает заголовочный файл стандартной библиотеки ввода-вывода. Без нее компилятор не узнает функцию <code>printf</code>.</li>
+                    <li><code>int main()</code> — главная функция программы. Выполнение любого приложения на C начинается строго с нее.</li>
+                    <li><code>\n</code> — специальный управляющий символ, который переводит курсор на новую строку.</li>
+                    <li><code>return 0;</code> — завершает работу функции <code>main()</code> и возвращает операционной системе сигнал о том, что программа отработала успешно (без ошибок).</li>
+                  </ul>
+                </div>
+                <div id="io" class="content-block">
+                  <h2>Ввод и вывод данных</h2>
+                  <p>Для взаимодействия с пользователем в C чаще всего используются функции <code>printf()</code> (для вывода информации на экран) и <code>scanf()</code> (для чтения данных с клавиатуры). Они работают на основе спецификаторов формата.</p>
+                
+                  <div class="code-wrapper">
+                    <div class="code-header"><span class="code-lang">c</span></div>
+                    <pre><code>#include &lt;stdio.h&gt;
+                    
+                int main() {
+                    int userNumber;
+                
+                    printf("Введите целое число: ");
+                    // Знак & перед переменной обязателен — он передает адрес памяти
+                    scanf("%d", &userNumber); 
+                
+                    printf("Вы ввели число: %d\n", userNumber);
+                    return 0;
+                }</code></pre>
+                  </div>
+              
+                  <h3>Важные правила при работе с вводом/выводом:</h3>
+                  <ul>
+                    <li>При использовании <code>scanf</code> перед именем переменной ставится оператор взятия адреса <strong><code>&</code></strong> (амперсанд). Он указывает функции, куда именно в памяти компьютера нужно сохранить введенное значение.</li>
+                    <li>Спецификатор <code>%d</code> сообщает компилятору, что мы работаем именно с целым десятичным числом (Integer).</li>
+                  </ul>
+                </div>
+
+                <div id="vdt" class="content-block">
+                  <h2>Переменные и типы данных</h2>
+                  <p>C — это язык со строгой статической типизацией. Это значит, что каждая переменная обязана иметь четко определенный тип, который нельзя изменить в процессе работы программы.</p>
+                
+                  <div class="code-wrapper">
+                    <div class="code-header"><span class="code-lang">c</span></div>
+                    <pre><code>#include &lt;stdio.h&gt;
+                    
+                int main() {
+                    int count = 10;            // Целое число (обычно 4 байта)
+                    float price = 49.99;       // Число с плавающей точкой (4 байта)
+                    double pi = 3.1415926535;  // Число с двойной точностью (8 байт)
+                    char letter = 'F';         // Один символ в одинарных кавычках (1 байт)
+                
+                    // Вывод разных типов данных с использованием их спецификаторов
+                    printf("Количество: %d\n", count);
+                    printf("Цена: %.2f\n", price); // .2 ограничивает вывод до 2 знаков после запятой
+                    printf("Символ: %c\n", letter);
+                
+                    return 0;
+                }</code></pre>
+                  </div>
+              
+                  <h3>Основные спецификаторы формата (Format Specifiers):</h3>
+                  <ul>
+                    <li><code>%d</code> или <code>%i</code> — для целых чисел (<code>int</code>)</li>
+                    <li><code>%f</code> — для дробных чисел (<code>float</code>)</li>
+                    <li><code>%lf</code> — для дробных чисел повышенной точности (<code>double</code>)</li>
+                    <li><code>%c</code> — для одиночных символов (<code>char</code>)</li>
+                  </ul>
+                </div>
+
+                <div id="ops" class="content-block">
+                  <h2>Операции в языке C</h2>
+                  <p>В языке Си доступен богатый набор операторов для выполнения математических, логических и сравнительных действий над переменными.</p>
+                
+                  <div class="code-wrapper">
+                    <div class="code-header"><span class="code-lang">c</span></div>
+                    <pre><code>#include &lt;stdio.h&gt;
+                    
+                int main() {
+                    int a = 10;
+                    int b = 3;
+
+                    // 1. Арифметические операции
+                    int sum = a + b;       // Сложение (13)
+                    int diff = a - b;      // Вычитание (7)
+                    int prod = a * b;      // Умножение (30)
+                    int quotient = a / b;  // Целочисленное деление (значение: 3)
+                    int remainder = a % b; // Остаток от деления (значение: 1)
+                
+                    // 2. Инкремент и декремент
+                    a++; // Увеличение a на 1 (станет 11)
+                    b--; // Уменьшение b на 1 (станет 2)
+                
+                    printf("Деление: %d, Остаток: %d\n", quotient, remainder);
+                    return 0;
+                }</code></pre>
+                  </div>
+              
+                  <h3>Особенности базовых операций:</h3>
+                  <ul>
+                    <li><strong>Целочисленное деление:</strong> Если вы делите `int` на `int` (например, `10 / 3`), Си отбрасывает дробную часть, и результатом будет `3`, а не `3.333...`. Чтобы получить точный результат, хотя бы одно из чисел должно быть типа `float` или `double`.</li>
+                    <li><strong>Взятие остатка (<code>%</code>):</strong> Оператор деления по модулю работает только с целыми числами и возвращает остаток, оставшийся после деления одного числа на другое.</li>
+                  </ul>
                 </div>
             </div>
         </div>
