@@ -258,3 +258,49 @@ body {
 .exit-account-window button:hover {
     transform: scale(1.05);
 }
+
+
+.tutorial-block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+    padding-left: 4%;
+}
+
+
+.tutorial-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 3%;
+    width: 20%;
+    height: 100%;
+}
+
+
+.theme-changer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 80%;
+    height: 100%;
+    padding: 5%;
+    gap: 0.8rem;
+
+    border-radius: 1rem;
+    background: linear-gradient(to top right, #121212, #3a3a3a);
+
+    color: floralwhite;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: 600;
+}
+.theme-changer li:hover {
+    font-size: 1.125rem;
+    text-shadow: 0 0 0.2rem white;
+    cursor: pointer;
+}
