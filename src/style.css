@@ -117,7 +117,7 @@ body {
     align-items: center;
 
     height: 100%;
-    width: 90%;
+    width: 95%;
     padding: 1rem 1rem 1rem 1rem;
 
     background: linear-gradient(to top right, #222222, #303030);
@@ -314,7 +314,7 @@ body {
     box-sizing: border-box;
     width: 100%;
 
-    padding: 2%;
+    padding-left: 2%;
 
     color: floralwhite;
     font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -326,15 +326,15 @@ body {
 
 
 .code-wrapper {
-    background-color: #787878;
+    background-color: #272727;
     border: 2px solid white;
     border-radius: 1rem;
 
-    width: 50%;
+    width: 90%;
 
     padding: 0.5% 2% 1% 2%;
 
-    color: #000000;
+    color: #ffffff;
 }
 .code-header {
     display: flex;
@@ -353,6 +353,5 @@ body {
 
 
 .content {
-    border-radius: 1rem;
-    border: 2px solid white;
+    border-left: 2px solid #919191;
 }

@@ -8,6 +8,11 @@ const main_blocks = document.querySelectorAll('.main-block');
 
 main_buttons.forEach(button => change_active(button, main_blocks, main_buttons));
 
+const doc_buttons = document.querySelectorAll('.doc-but');
+const doc_blocks = document.querySelectorAll('.content-block');
+
+doc_buttons.forEach(button => change_active(button, doc_blocks, doc_buttons));
+
 
 function onAccountButtonClick(){
     document.getElementById('account-window').classList.add('active');
